@@ -1,15 +1,23 @@
 <?php
-$Identificacion= $_POST ['Identificacion'];
-$NomApellidos=$_POST ['NomApellidos'];
-$Cargo=$_POST ['cargo'];
-$Salario=$_POST ['Salario'];
-echo "La identificacion del Empleado es: ".p1;
-echo "La identificacion del Empleado es: ".p2;
-echo "La identificacion del Empleado es: ".p3;
-echo "La identificacion del Empleado es: ".pre1;
-echo "La identificacion del Empleado es: ".pre2;
-echo "La identificacion del Empleado es: ".pre2;
-echo "Los nombres y apellidos del empleado son: "NomApellidos;
-echo "El cago del empleado es: ".Cargo;
-echo "El salario del empeado es:  ".Salario;
-?>
+       $y=$_POST['A'];
+        $z=$_POST['B'];
+        if (isset($_POST[btsuma]))
+        {
+            $c=$y+$z;            echo '<h1>'.$y. '+'.$z.'</h1>'.'ES:  '.$c;
+        }
+        if (isset($_POST[btresta]))
+          {
+              $c=$y-$z;            echo '<h1>'.$y. '-'.$z.'</h1>'.'ES:  '.$c;
+        }
+        if (isset($_POST[btmult]))
+        {
+              $c=$y*$z;            echo '<h1>'.$y. '*'.$z.'</h1>'.'ES:  '.$c;
+        }
+         if (isset($_POST[btdiv]))
+         {
+             if ($z !=0) $c=$y /$z;
+else 
+     $c=0;
+ echo '<h1>'.$y. '/'.$z.'</h1>'.'ES:   '.$c;
+         }
+            ?>    
